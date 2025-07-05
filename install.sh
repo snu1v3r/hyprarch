@@ -1,11 +1,3 @@
-pacman -Q git &>/dev/null || sudo pacman -Sy --noconfirm --needed git
-
-echo -e "\nCloning HyprArch..."
-rm -rf ~/.local/share/hyprarch/
-git clone https://github.com/snu1v3r/hyprarch.git ~/.local/share/hyprarch >/dev/null
-
-echo -e "\nInstallation starting..."
-#
 # Install everything
 for f in ~/.local/share/hyprarch/install/*.sh; do source "$f"; done
 
