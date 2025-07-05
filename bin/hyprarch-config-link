@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Link all the key config files to hyprarch's internal versions for quicker testing
+ln -nsf ~/.local/share/hyprarch/config/hypr/hyprland.conf ~/.config/hypr/
+ln -nsf ~/.local/share/hyprarch/config/hypr/hypridle.conf ~/.config/hypr/
+ln -nsf ~/.local/share/hyprarch/config/waybar/config ~/.config/waybar/
+ln -nsf ~/.local/share/hyprarch/config/wofi/config ~/.config/wofi/

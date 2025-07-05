@@ -1,2 +1,6 @@
 yay -S --noconfirm --needed \
-  lazygit
+  cargo clang llvm mise \
+  imagemagick \
+  mariadb-libs postgresql-libs \
+  github-cli \
+  lazygit lazydocker

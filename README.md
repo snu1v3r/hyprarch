@@ -6,6 +6,6 @@ This is a repo to prepare a Archlinux install using Hyprland.
 For installation you can use the following line:
 
 ```bash
-wget -qO- https://raw.githubusercontent.com/snu1v3r/hyprarch/refs/heads/main/boot.sh | bash
+eval "$(wget -qO- https://raw.githubusercontent.com/snu1v3r/hyprarch/refs/heads/main/boot.sh)"
 ```
 

@@ -5,4 +5,3 @@ yay -S --noconfirm --needed \
 
 # Start Hyprland on first session
 echo "[[ -z \$DISPLAY && \$(tty) == /dev/tty1 ]] && exec Hyprland" >~/.bash_profile
-

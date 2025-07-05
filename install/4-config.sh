@@ -1,7 +1,7 @@
-# Copy over Hyprarch configs
+# Copy over hyprarch configs
 cp -R ~/.local/share/hyprarch/config/* ~/.config/
 
-# Use default bashrc from Hyprarch
+# Use default bashrc from hyprarch
 echo "source ~/.local/share/hyprarch/default/bash/rc" >~/.bashrc
 
 # Login directly as user, rely on disk encryption + hyprlock for security
