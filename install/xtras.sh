@@ -1,7 +1,6 @@
 yay -S --noconfirm --needed \
-  signal-desktop spotify dropbox-cli zoom \
-  obsidian typora libreoffice obs-studio kdenlive \
-  pinta xournalpp
+  spotify \
+  obsidian
 
 # Copy over hyprarch applications
 source ~/.local/share/hyprarch/bin/hyprarch-sync-applications

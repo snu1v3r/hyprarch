@@ -1,5 +1,5 @@
 yay -S --noconfirm --needed \
-  cargo clang llvm mise \
+  cargo clang llvm \
   imagemagick \
   mariadb-libs postgresql-libs \
   github-cli \
