@@ -4,9 +4,9 @@ echo -e "\nCloning Hyprarch..."
 rm -rf ~/.local/share/hyprarch/
 git clone https://github.com/snu1v3r/hyprarch.git ~/.local/share/hyprarch >/dev/null
 
-echo -e "\Cloning Dotfiles..."
+echo -e "\nCloning Dotfiles..."
 rm -rf ~/.local/share/dotfiles/
-git clone https://github.com/snu1v3r/dotfiles.git ~/.local/share/dotfiles >/dev/null
+git clone --recursive --depth 1 https://github.com/snu1v3r/dotfiles.git ~/.local/share/dotfiles >/dev/null
 
 echo -e "\nInstallation starting..."
 source ~/.local/share/hyprarch/install.sh
