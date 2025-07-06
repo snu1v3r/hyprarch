@@ -4,6 +4,6 @@ yay -S --noconfirm --needed \
   wl-clip-persist clipse \
   nautilus sushi gnome-calculator \
   brave-browser \
-  keepassxc \
+  keepassxc qt5-wayland \
   chromium vlc \
   evince imv

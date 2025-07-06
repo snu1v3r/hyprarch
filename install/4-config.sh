@@ -5,12 +5,12 @@ cp -R ~/.local/share/hyprarch/config/* ~/.config/
 echo "source ~/.local/share/hyprarch/default/bash/rc" >~/.bashrc
 
 # Login directly as user, rely on disk encryption + hyprlock for security
-sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
-sudo tee /etc/systemd/system/getty@tty1.service.d/override.conf >/dev/null <<EOF
-[Service]
-ExecStart=
-ExecStart=-/usr/bin/agetty --autologin $USER --noclear %I \$TERM
-EOF
+#sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
+#sudo tee /etc/systemd/system/getty@tty1.service.d/override.conf >/dev/null <<EOF
+#[Service]
+#ExecStart=
+#ExecStart=-/usr/bin/agetty --autologin $USER --noclear %I \$TERM
+#EOF
 
 # Set common git aliases
 git config --global alias.co checkout
