@@ -7,15 +7,15 @@ gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 
 # Setup theme links
-mkdir -p ~/.config/hyprarch/themes
-for f in ~/.local/share/hyprarch/themes/*; do ln -s "$f" ~/.config/hyprarch/themes/; done
+#mkdir -p ~/.config/hyprarch/themes
+#for f in ~/.local/share/hyprarch/themes/*; do ln -s "$f" ~/.config/hyprarch/themes/; done
 
 # Set initial theme
 mkdir -p ~/.config/hyprarch/current
-ln -snf ~/.config/hyprarch/themes/tokyo-night ~/.config/hyprarch/current/theme
+ln -snf ~/.local/share/dotfiles/themes/tokyo-night ~/.config/hyprarch/current/theme
 source ~/.local/share/hyprarch/themes/tokyo-night/backgrounds.sh
-ln -snf ~/.config/hyprarch/backgrounds/tokyo-night ~/.config/hyprarch/current/backgrounds
-ln -snf ~/.config/hyprarch/current/backgrounds/1-Pawel-Czerwinski-Abstract-Purple-Blue.jpg ~/.config/hyprarch/current/background
+ln -snf ~/local/share/dotfiles/tokyo-night ~/.config/hyprarch/current/backgrounds
+#ln -snf ~/.config/hyprarch/current/backgrounds/1-Pawel-Czerwinski-Abstract-Purple-Blue.jpg ~/.config/hyprarch/current/background
 
 # Set specific app links for current theme
 ln -snf ~/.config/hyprarch/current/theme/hyprlock.conf ~/.config/hypr/hyprlock.conf

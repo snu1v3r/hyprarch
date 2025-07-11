@@ -1,5 +1,9 @@
 # Copy over hyprarch configs
-cp -R ~/.local/share/hyprarch/config/* ~/.config/
+cd ~/.local/share/dotfiles/stowed_files/config
+stow .
+
+cd ~/.local/share/hyprarch/config
+stow .
 
 # Use default bashrc from hyprarch
 echo "source ~/.local/share/hyprarch/default/bash/rc" >~/.bashrc
