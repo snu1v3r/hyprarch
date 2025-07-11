@@ -13,8 +13,7 @@ gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 # Set initial theme
 mkdir -p ~/.config/hyprarch/current
 ln -snf ~/.local/share/dotfiles/themes/tokyo-night ~/.config/hyprarch/current/theme
-source ~/.local/share/hyprarch/themes/tokyo-night/backgrounds.sh
-ln -snf ~/local/share/dotfiles/tokyo-night ~/.config/hyprarch/current/backgrounds
+ln -snf $(find ~/.config/current/theme/backgrounds -type f -print -quit) ~/.config/hyprarch/current/background
 #ln -snf ~/.config/hyprarch/current/backgrounds/1-Pawel-Czerwinski-Abstract-Purple-Blue.jpg ~/.config/hyprarch/current/background
 
 # Set specific app links for current theme
