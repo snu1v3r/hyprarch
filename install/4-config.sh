@@ -11,6 +11,7 @@ tee ~/.config/hypr/overrides.conf >/dev/null <<EOF
 
 # Use single default monitor (see all monitors with: hyprctl monitors)
 # monitor= ,preferred,auto,auto
+# monitor = [name], preferred | <width>x<height>[@<frequency>],auto | <position right>x<position down>, auto | <scaling factor>
 
 # Example for Framework 13 w/ 6K XDR Apple display
 # monitor = DP-5, 6016x3384@60.00, auto, 2
