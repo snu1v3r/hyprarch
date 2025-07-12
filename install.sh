@@ -1,3 +1,4 @@
+echo $SHELL
 echo -e "\nInstalling git..."
 pacman -Q git &>/dev/null || sudo pacman -Sy --noconfirm --needed git
 
