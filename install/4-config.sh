@@ -28,6 +28,8 @@ sudo chsh -s $(which zsh) $USER
 # Use default bashrc from hyprarch
 echo "source ~/.local/share/hyprarch/default/bash/rc" >~/.bashrc
 
+ln -snf ~/.local/share/dotfiles/zsh/zshrc ~/.zshrc
+
 # Login directly as user, rely on disk encryption + hyprlock for security
 sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
 sudo tee /etc/systemd/system/getty@tty1.service.d/override.conf >/dev/null <<EOF
