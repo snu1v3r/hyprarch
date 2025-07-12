@@ -6,9 +6,18 @@ cd ~/.local/share/hyprarch/config
 stow .
 
 tee ~/.config/hypr/overrides.conf >/dev/null <<EOF
+# This file can be used to override monitor settings on a system specific level 
+# See https://wiki.hyprland.org/Configuring/Monitors/
+
+# Use single default monitor (see all monitors with: hyprctl monitors)
+# monitor= ,preferred,auto,auto
+
+# Example for Framework 13 w/ 6K XDR Apple display
+# monitor = DP-5, 6016x3384@60.00, auto, 2
+# monitor = eDP-1, 2880x1920@120.00, auto, 2
+#
 # Extra env variables
-env = GDK_SCALE,1 # Change to 1 if on a 1x display
-monitor = , 2560x1440@60.00, auto, 1
+# env = GDK_SCALE,1 # Change to 1 if on a 1x display
 EOF
 
 # Use default bashrc from hyprarch
