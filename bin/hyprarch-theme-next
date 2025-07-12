@@ -31,6 +31,9 @@ NEW_THEME_NAME=$(basename "$NEW_THEME")
 # Set current theme
 ln -nsf "$NEW_THEME" "$CURRENT_THEME_LINK"
 
+# Ensure new theme is picked up by bat
+bat cache --build
+
 # Touch alacritty config to pickup the changed theme
 touch "$HOME/.config/alacritty/alacritty.toml"
 
