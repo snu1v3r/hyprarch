@@ -1,4 +1,3 @@
-echo $SHELL
 echo -e "\nInstalling git..."
 pacman -Q git &>/dev/null || sudo pacman -Sy --noconfirm --needed git
 
@@ -8,7 +7,7 @@ git clone https://github.com/snu1v3r/hyprarch.git ~/.local/share/hyprarch >/dev/
 
 echo -e "\nCloning Dotfiles..."
 rm -rf ~/.local/share/dotfiles/
-git clone --recursive --depth 1 https://github.com/snu1v3r/dotfiles.git ~/.local/share/dotfiles >/dev/null
+git clone --recursive --depth 1 --shallow-submodules https://github.com/snu1v3r/dotfiles.git ~/.local/share/dotfiles >/dev/null
 
 echo -e "\nInstallation starting..."
 
