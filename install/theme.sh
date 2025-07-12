@@ -19,3 +19,6 @@ mkdir -p ~/.config/btop/themes
 ln -snf ~/.config/dotfiles/theme/current/btop.theme ~/.config/btop/themes/current.theme
 mkdir -p ~/.config/mako
 ln -snf ~/.config/dotfiles/theme/current/mako.ini ~/.config/mako/config
+mkdir -p ~/.config/bat/themes
+ln -snf ~/.config/dotfiles/theme/current/bat-theme.tmTheme ~/.config/bat/themes/current.tmTheme
+bat cache --build
