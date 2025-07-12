@@ -5,6 +5,12 @@ stow .
 cd ~/.local/share/hyprarch/config
 stow .
 
+tee ~/.config/hypr/overrides.conf >/dev/null <<EOF
+# Extra env variables
+env = GDK_SCALE,1 # Change to 1 if on a 1x display
+monitor = , 2560x1440@60.00, auto, 1
+EOF
+
 # Use default bashrc from hyprarch
 echo "source ~/.local/share/hyprarch/default/bash/rc" >~/.bashrc
 
