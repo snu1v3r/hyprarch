@@ -1,6 +1,0 @@
-source ~/.local/share/hyprarch/default/bash/shell
-source ~/.local/share/hyprarch/default/bash/aliases
-source ~/.local/share/hyprarch/default/bash/functions
-source ~/.local/share/hyprarch/default/bash/prompt
-source ~/.local/share/hyprarch/default/bash/init
-source ~/.local/share/hyprarch/default/bash/envs
