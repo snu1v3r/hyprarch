@@ -1,9 +1,9 @@
 #!/bin/bash
 
-THEMES_DIR="$HOME/.config/hyprarch/themes/"
-CURRENT_THEME_LINK="$HOME/.config/hyprarch/current/theme"
+THEMES_DIR="$HOME/.local/share/dotfiles/themes/"
+CURRENT_THEME_LINK="$HOME/.config/hypr_theme/current"
 
-THEMES=($(find "$THEMES_DIR" -mindepth 1 | sort))
+THEMES=($(find "$THEMES_DIR" -maxdepth 1 -type d | tail -n +2 | sort))
 TOTAL=${#THEMES[@]}
 
 # Get current theme from symlink
@@ -29,8 +29,7 @@ NEW_THEME=${THEMES[$NEXT_INDEX]}
 NEW_THEME_NAME=$(basename "$NEW_THEME")
 
 # Set current theme
-ln -nsf "$HOME/.config/hyprarch/backgrounds/$NEW_THEME_NAME" "$HOME/.config/hyprarch/current/backgrounds"
-ln -nsf "$NEW_THEME" "$HOME/.config/hyprarch/current/theme"
+ln -nsf "$NEW_THEME" "$CURRENT_THEME_LINK"
 
 # Touch alacritty config to pickup the changed theme
 touch "$HOME/.config/alacritty/alacritty.toml"
@@ -41,9 +40,9 @@ makoctl reload
 hyprctl reload
 
 # Set new background
-ln -nsf $(find "$HOME/.config/hyprarch/current/backgrounds/" -type f | head -n 1) "$HOME/.config/hyprarch/current/background"
+ln -nsf $(find "$HOME/.config/hypr_theme/current/backgrounds/" -type f | head -n 1) "$HOME/.config/hypr_theme/background"
 pkill -x swaybg
-setsid swaybg -i "$HOME/.config/hyprarch/current/background" -m fill &
+setsid swaybg -i "$HOME/.config/hypr_theme/background" -m fill &
 
 # Notify of the new theme
 notify-send "Theme changed to $NEW_THEME_NAME" -t 2000
