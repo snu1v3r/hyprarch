@@ -7,15 +7,15 @@ gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 
 # Set initial theme
-mkdir -p ~/.config/hypr_theme
-ln -snf ~/.local/share/dotfiles/themes/tokyo-night ~/.config/hypr_theme/current
-ln -snf $(find ~/.config/hypr_theme/current/backgrounds -type f -print -quit) ~/.config/hypr_theme/background
+mkdir -p ~/.config/dotfiles/theme
+ln -snf ~/.local/share/dotfiles/themes/tokyo-night ~/.config/dotfiles/theme/current
+ln -snf $(find ~/.config/dotfiles/theme/current/backgrounds -type f -print -quit) ~/.config/dotfiles/theme/background
 
 # Set specific app links for current theme
-ln -snf ~/.config/hypr_theme/current/hyprlock.conf ~/.config/hypr/hyprlock.conf
-ln -snf ~/.config/hypr_theme/current/wofi.css ~/.config/wofi/style.css
-ln -snf ~/.config/hypr_theme/current/neovim.lua ~/.config/nvim/lua/plugins/theme.lua
+ln -snf ~/.config/dotfiles/theme/current/hyprlock.conf ~/.config/hypr/hyprlock.conf
+ln -snf ~/.config/dotfiles/theme/current/wofi.css ~/.config/wofi/style.css
+ln -snf ~/.config/dotfiles/theme/current/neovim.lua ~/.config/nvim/lua/plugins/theme.lua
 mkdir -p ~/.config/btop/themes
-ln -snf ~/.config/hypr_theme/current/btop.theme ~/.config/btop/themes/current.theme
+ln -snf ~/.config/dotfiles/theme/current/btop.theme ~/.config/btop/themes/current.theme
 mkdir -p ~/.config/mako
-ln -snf ~/.config/hypr_theme/current/mako.ini ~/.config/mako/config
+ln -snf ~/.config/dotfiles/theme/current/mako.ini ~/.config/mako/config

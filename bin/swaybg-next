@@ -2,8 +2,8 @@
 
 # Cycles through the background images available
 
-BACKGROUNDS_DIR="$HOME/.config/hypr_theme/current/backgrounds/"
-CURRENT_BACKGROUND_LINK="$HOME/.config/hypr_theme/background"
+BACKGROUNDS_DIR="$HOME/.config/dotfiles/theme/current/backgrounds/"
+CURRENT_BACKGROUND_LINK="$HOME/.config/dotfiles/theme/background"
 
 BACKGROUNDS=($(find "$BACKGROUNDS_DIR" -type f | sort))
 TOTAL=${#BACKGROUNDS[@]}
