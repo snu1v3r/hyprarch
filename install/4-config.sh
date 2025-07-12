@@ -21,6 +21,10 @@ tee ~/.config/hypr/overrides.conf >/dev/null <<EOF
 # env = GDK_SCALE,1 # Change to 1 if on a 1x display
 EOF
 
+# Set zsh as default shell
+
+sudo chsh -s $(which zsh) $USER
+
 # Use default bashrc from hyprarch
 echo "source ~/.local/share/hyprarch/default/bash/rc" >~/.bashrc
 
