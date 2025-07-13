@@ -7,5 +7,6 @@ yay -S --noconfirm --needed \
   tmux openssh
 
 # Use stow to create links in the .local directory for both dotfiles and hyprarch
+mkdir -p ${HOME}/.local/bin
 stow --target=${HOME}/.local --dir=${HOME}/.local/share/dotfiles/stowed_files/local .
 stow --target=${HOME}/.local --dir=${HOME}/.local/share/hyprarch/local .
