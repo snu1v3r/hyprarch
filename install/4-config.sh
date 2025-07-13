@@ -1,8 +1,8 @@
 # Use stow to create links to config of both dotfiles and hyprarch
-stow --target=~/.config --dir=~/.local/share/dotfiles/stowed_files/config
-stow --target=~/.config --dir=~/.local/share/hyprarch/config
+stow --target=${HOME}/.config --dir=${HOME}/.local/share/dotfiles/stowed_files/config
+stow --target=${HOME}/.config --dir=${HOME}/.local/share/hyprarch/config
 
-tee ~/.config/hypr/overrides.conf >/dev/null <<EOF
+tee ${HOME}/.config/hypr/overrides.conf >/dev/null <<EOF
 # This file can be used to override monitor settings on a system specific level 
 # See https://wiki.hyprland.org/Configuring/Monitors/
 
@@ -23,9 +23,9 @@ EOF
 sudo chsh -s $(which zsh) $USER
 
 # Use default bashrc from hyprarch
-echo "source ~/.local/share/hyprarch/default/bash/rc" >~/.bashrc
+echo "source ${HOME}/.local/share/hyprarch/default/bash/rc" >${HOME}/.bashrc
 
-ln -snf ~/.local/share/dotfiles/zsh/zshrc ~/.zshrc
+ln -snf ${HOME}/.local/share/dotfiles/zsh/zshrc ${HOME}/.zshrc
 
 # Login directly as user, rely on disk encryption + hyprlock for security
 sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
@@ -53,7 +53,7 @@ if [[ -n "${HYPRARCH_USER_EMAIL//[[:space:]]/}" ]]; then
 fi
 
 # Set default XCompose that is triggered with CapsLock
-tee ~/.XCompose >/dev/null <<EOF
+tee ${HOME}/.XCompose >/dev/null <<EOF
 include "%L"
 
 # Emoji
