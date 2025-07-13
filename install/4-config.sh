@@ -1,9 +1,6 @@
-# Copy over hyprarch configs
-cd ~/.local/share/dotfiles/stowed_files/config
-stow .
-
-cd ~/.local/share/hyprarch/config
-stow .
+# Use stow to create links to config of both dotfiles and hyprarch
+stow --target=~/.config --dir=~/.local/share/dotfiles/stowed_files/config
+stow --target=~/.config --dir=~/.local/share/hyprarch/config
 
 tee ~/.config/hypr/overrides.conf >/dev/null <<EOF
 # This file can be used to override monitor settings on a system specific level 
