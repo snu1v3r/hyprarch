@@ -10,7 +10,6 @@
       "clock"
     ],
     "modules-right": [
-      "custom/dropbox",
       "bluetooth",
       "network",
       "pulseaudio",
