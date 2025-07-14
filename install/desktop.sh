@@ -1,8 +1,6 @@
 yay -S --noconfirm --needed \
-  \
-  # brave-bin \
-  \
-  # gnome-calculator #  keepassxc qt5-wayland \
+  brave-bin
+# gnome-calculator #  keepassxc qt5-wayland \
 #  nautilus \
 #  nextcloud-client
 # wl-clip-persist clipse \
