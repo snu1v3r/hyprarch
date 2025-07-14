@@ -16,6 +16,21 @@ tee ${HOME}/.config/hypr/overrides.conf >/dev/null <<EOF
 #
 # Extra env variables
 # env = GDK_SCALE,1 # Change to 1 if on a 1x display
+#
+# Some suggestions
+#
+# Laptop only
+# monitor = , 2880x1800@60.00, auto, 1.6
+# env = GDK_SCALE, 1.6
+# 
+# Asus screen
+# monitor = , 1920x1080@60.00, auto, 1
+# env = GDK_SCALE, 1
+#
+# HP-monitors
+# monitor = , 2560x1440@60.00, auto, 1
+# env = GDK_SCALE, 1
+#
 EOF
 
 # Set zsh as default shell
