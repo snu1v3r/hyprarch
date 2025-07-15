@@ -1,5 +1,5 @@
 # Use stow to create links to config of both dotfiles and hyprarch
-stow --target=${HOME}/.config --dir=${HOME}/.local/share/dotfiles/stowed_files/config .
+stow --target=${HOME}/.config --dir=${HOME}/.local/share/dotfiles/config .
 stow --target=${HOME}/.config --dir=${HOME}/.local/share/hyprarch/config .
 
 tee ${HOME}/.config/hypr/overrides.conf >/dev/null <<EOF
