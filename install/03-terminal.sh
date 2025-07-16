@@ -5,7 +5,8 @@ yay -S --noconfirm --needed \
   man tldr less whois plocate \
   alacritty zsh stow \
   tmux openssh \
-  nvim luarocks tree-sitter-cli
+  nvim luarocks tree-sitter-cli \
+  yazi
 
 # Use stow to create links in the .local directory for both dotfiles and hyprarch
 mkdir -p ${HOME}/.local/bin

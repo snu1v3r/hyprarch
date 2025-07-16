@@ -1,6 +1,6 @@
 yay -S --noconfirm --needed \
   brave-bin keepassxc nextcloud-client qt5-wayland \
-  gnome-calculator nautilus flameshot vlc \
+  galculator nautilus flameshot vlc \
   fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-qt \
   brightnessctl evince imv \
   wl-clip-persist clipse sushi pamixer playerctl pavucontrol wireplumber
