@@ -4,7 +4,8 @@ yay -S --noconfirm --needed \
   wl-clipboard fastfetch btop \
   man tldr less whois plocate \
   alacritty zsh stow \
-  tmux openssh
+  tmux openssh \
+  nvim luarocks tree-sitter-cli
 
 # Use stow to create links in the .local directory for both dotfiles and hyprarch
 mkdir -p ${HOME}/.local/bin
