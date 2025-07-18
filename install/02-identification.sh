@@ -15,5 +15,3 @@ if [ "$PROFILE" = "" ]; then
     PROFILE=$(echo "$RESULT" | tr '[:upper:]' '[:lower:]')
   fi
 fi
-
-echo $PROFILE
