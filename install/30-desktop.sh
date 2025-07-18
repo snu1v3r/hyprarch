@@ -1,9 +1,10 @@
 yay -S --noconfirm --needed \
   brave-bin \
-  galculator nautilus flameshot vlc \
+  galculator nautilus flameshot-git vlc \
   fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-qt \
   evince imv \
-  wl-clip-persist clipse sushi pamixer playerctl pavucontrol wireplumber
+  wl-clip-persist clipse sushi pamixer playerctl pavucontrol wireplumber \
+  pamac-gtk
 
 if [ "$PROFILE" = "main" ]; then
   yay -S --noconfirm --needed \
