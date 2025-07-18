@@ -18,3 +18,4 @@ if [ "$PROFILE" = "" ]; then
 fi
 
 gum style "The following profile is used: $PROFILE"
+sleep 400
