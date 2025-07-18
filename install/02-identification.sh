@@ -16,3 +16,5 @@ if [ "$PROFILE" = "" ]; then
     PROFILE=$(echo "$RESULT" | tr '[:upper:]' '[:lower:]')
   fi
 fi
+
+gum style "The following profile is used: $PROFILE"
