@@ -1,9 +1,14 @@
 yay -S --noconfirm --needed \
-  brave-bin keepassxc nextcloud-client qt5-wayland \
+  brave-bin \
   galculator nautilus flameshot vlc \
   fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-qt \
-  brightnessctl evince imv \
+  evince imv \
   wl-clip-persist clipse sushi pamixer playerctl pavucontrol wireplumber
+
+if [ "$PROFILE" = "main" ]; then
+  yay -S --noconfirm --needed \
+    keepassxc nextcloud-client qt5-wayland brightnessctl
+fi
 
 # Needed to pre-install keepassxc plugin in brave-bin
 
