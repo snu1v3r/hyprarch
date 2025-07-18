@@ -4,8 +4,8 @@ yay -S --noconfirm --needed gum
 
 # Configure identification
 echo -e "\nEnter identification for git and autocomplete..."
-export HYPRARCH_USER_NAME=$(gum input --placeholder "Enter full name" --prompt "Name> ")
-export HYPRARCH_USER_EMAIL=$(gum input --placeholder "Enter email address" --prompt "Email> ")
+export HYPRARCH_USER_NAME=$(gum input --placeholder "Enter full name" --prompt "Name> " <&3)
+export HYPRARCH_USER_EMAIL=$(gum input --placeholder "Enter email address" --prompt "Email> " <&3)
 
 # An optional selection for the profile if not already given
 if [ "$PROFILE" = "" ]; then
