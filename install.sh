@@ -1,14 +1,5 @@
 #!/usr/bin/env bash
 
-# Profile cli argument enables profile based installation
-#
-
-if [ "$1" = "--profile" ]; then
-  PROFILE=$2
-else
-  PROFILE=""
-fi
-
 echo -e "\nInstalling git..."
 pacman -Q git &>/dev/null || sudo pacman -Sy --noconfirm --needed git
 
