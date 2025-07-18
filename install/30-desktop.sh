@@ -14,7 +14,7 @@ fi
 
 if command -v keepassxc &>/dev/null; then
   if [ -f /opt/brave-bin/brave ]; then
-    echo '{ "external_update_url": "https://clients2.google.com/service/update2/crx" }' >/tmp/oboonakemofpalcgghocfoadofidjkkk.json
-    sudo mkdir -p /opt/brave-bin/extensions && sudo mv /tmp/oboonakemofpalcgghocfoadofidjkkk.json /opt/brave-bin/extensions
+    sudo mkdir -p /opt/brave-bin/extensions
+    echo '{ "external_update_url": "https://clients2.google.com/service/update2/crx" }' | sudo tee /opt/brave-bin/extensions/oboonakemofpalcgghocfoadofidjkkk.json
   fi
 fi
