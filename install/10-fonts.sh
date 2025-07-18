@@ -38,3 +38,5 @@ yay -Sy --noconfirm --needed ttf-font-awesome noto-fonts noto-fonts-emoji noto-f
 #   fc-cache
 #   cd -
 # fi
+
+fc-cache
