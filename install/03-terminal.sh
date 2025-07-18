@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 yay -S --noconfirm --needed \
   wget curl unzip inetutils \
   fd eza fzf ripgrep zoxide bat bat-extras \
