@@ -33,11 +33,11 @@ tee ${HOME}/.config/hypr/overrides.conf >/dev/null <<EOF
 #
 EOF
 
-if [[ "${RESOLUTION" = "2880x1800" ]]; then
-  echo "# Resolution selected from install script\n\nmonitor = , ${RESOLUTION}@60.00, auto, 1.6\nenv= GDK_SCALE, 1.6" >> ~/.config/hypr/overrides.conf
+if [[ "${RESOLUTION}" = "2880x1800" ]]; then
+  echo "# Resolution selected from install script\n\nmonitor = , ${RESOLUTION}@60.00, auto, 1.6\nenv= GDK_SCALE, 1.6" >>~/.config/hypr/overrides.conf
 else
-  echo "# Resolution selected from install script\n\nmonitor = , ${RESOLUTION}@60.00, auto, 1\nenv = GDK_SCALE, 1" >> ~/.config/hypr/overrides.conf
-fi 
+  echo "# Resolution selected from install script\n\nmonitor = , ${RESOLUTION}@60.00, auto, 1\nenv = GDK_SCALE, 1" >>~/.config/hypr/overrides.conf
+fi
 
 # Set zsh as default shell
 
