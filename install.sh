@@ -15,6 +15,9 @@ echo -e "\nEnter identification for git and autocomplete..."
 export HYPRARCH_USER_NAME=$(gum input --placeholder "Enter full name" --prompt "Name> ")
 export HYPRARCH_USER_EMAIL=$(gum input --placeholder "Enter email address" --prompt "Email> ")
 
+install_info "Installing for user: $HYPRARCH_USER_NAME"
+install_info "Using e-mail: $HYPRARCH_USER_EMAIL"
+
 # Select profile
 if [ "$PROFILE" = "" ]; then
   RESULT=$(gum choose Main Hacking Server --header="Select the target profile:")
