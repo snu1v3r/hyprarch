@@ -38,6 +38,29 @@ log_yes_no() {
 }
 
 initialize
+log_info "Installing gum..."
+pacman -Q gum &>/dev/null || sudo pacman -Sy --noconfirm --needed gum
+
+# Configure identification
+echo -e "\nEnter identification for git and autocomplete..."
+export HYPRARCH_USER_NAME=$(gum input --placeholder "Enter full name" --prompt "Name> ")
+export HYPRARCH_USER_EMAIL=$(gum input --placeholder "Enter email address" --prompt "Email> ")
+
+# Select profile
+if [ "$PROFILE" = "" ]; then
+  RESULT=$(gum choose Main Hacking Server --header="Select the target profile:")
+  if [ "$RESULT" = "" ]; then
+    PROFILE="main"
+  else
+    PROFILE=$(echo "$RESULT" | tr '[:upper:]' '[:lower:]')
+  fi
+fi
+
+log_info "The following profile is used: $PROFILE"
+
+# Select target resolution
+RESOLUTION=$(gum choose "2880x1800" "2560x1440" "1920x1080" --header="Select the target resolution:")
+log_info "The following resolution is used: $RESOLUTION"
 
 log_info "Installing git..."
 pacman -Q git &>/dev/null || sudo pacman -Sy --noconfirm --needed git

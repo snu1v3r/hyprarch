@@ -17,5 +17,5 @@ eval "$(wget -qO- https://raw.githubusercontent.com/snu1v3r/hyprarch/main/instal
 - [ ] move zsh to $HOME/.config/zsh
 - [x] remove flameshot
 - [x] add option to select resolution
-- [ ] move gum to the beginningi in order to get tall inputs before clone
+- [x] move gum to the beginningi in order to get tall inputs before clone
 
