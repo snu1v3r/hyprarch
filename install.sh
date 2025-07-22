@@ -14,19 +14,19 @@ initialize() {
 }
 
 log_info() {
-  echo -e "$(date +%T) $BLUE[i]$CLEAR $1" | tee -a /tmp/install.log
+  echo -e "$(date +%T) $BLUE[i]$CLEAR $1" | tee -a ${HOME}/install.log
 }
 
 log_warning() {
-  echo -e "$(date +%T) $ORANGE[!]$CLEAR $1" | tee -a /tmp/install.log
+  echo -e "$(date +%T) $ORANGE[!]$CLEAR $1" | tee -a ${HOME}/install.log
 }
 
 log_success() {
-  echo -e "$(date +%T) $GREEN[*]$CLEAR $1" | tee -a /tmp/install.log
+  echo -e "$(date +%T) $GREEN[*]$CLEAR $1" | tee -a ${HOME}/install.log
 }
 
 log_spaced() {
-  echo "    $1" | tee -a /tmp/install.log
+  echo "    $1" | tee -a ${HOME}/install.log
 }
 
 log_yes_no() {
