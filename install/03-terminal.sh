@@ -7,7 +7,7 @@ yay -S --noconfirm --needed \
   alacritty zsh stow \
   tmux openssh \
   nvim luarocks tree-sitter-cli \
-  yazi
+  yazi swappy mc
 
 # Use stow to create links in the .local directory for both dotfiles and hyprarch
 mkdir -p ${HOME}/.local/bin
