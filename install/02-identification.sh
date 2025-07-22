@@ -16,5 +16,8 @@ if [ "$PROFILE" = "" ]; then
     PROFILE=$(echo "$RESULT" | tr '[:upper:]' '[:lower:]')
   fi
 fi
-
 gum style "The following profile is used: $PROFILE"
+
+RESOLUTION=$(gum choose "2880x1800" "2560x1440" "1920x1080" --header="Select the target resolution:")
+
+gum style "The following resolution is used: $RESOLUTION"
